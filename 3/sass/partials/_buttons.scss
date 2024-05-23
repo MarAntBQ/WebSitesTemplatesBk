@@ -1,0 +1,17 @@
+.btn-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    background: $color4;
+    color: white;
+    border: 1px solid $color4;
+    transition: 1s;
+    font-family: 'Titillium Web', sans-serif;
+    border-radius: 5px;
+    &:hover {
+        background: $color5;
+        cursor: pointer;
+    }
+}

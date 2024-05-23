@@ -1,0 +1,17 @@
+#page404 {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/pages/404/404.jpg);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+	p,
+	h1 {
+		color: white;
+		width: 100%;
+	}
+}

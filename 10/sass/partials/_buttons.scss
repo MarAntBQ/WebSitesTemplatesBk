@@ -1,0 +1,20 @@
+.btn-center {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	text-align: center;
+	padding: 15px;
+	margin: 10px auto;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #0C1B31 0%, #506e9b  51%, #0C1B31  100%);
+	background-size: 200% auto;
+	color: $color3;
+	transition: 0.5s;
+	z-index: 2;
+	&:hover {
+		background-position: right center;
+		transform: scale(1.05);
+		border-radius: 10px;
+		filter: drop-shadow(8px 8px 10px rgba(120, 23, 24, 0.29));
+	}
+}

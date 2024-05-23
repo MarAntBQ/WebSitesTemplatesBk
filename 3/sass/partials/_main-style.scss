@@ -1,0 +1,46 @@
+/* Body */ 
+body {
+    min-width: 300px;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Fonts */
+//Pacifico for Web Site header tittle
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+header {
+    .logo {
+        p {
+            a {
+                font-family: 'Pacifico', cursive;
+            }
+        }
+    }
+}
+//Titillum Web for all the main parts
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+//Satisfy for menu links and headings
+@import url('https://fonts.googleapis.com/css?family=Satisfy&display=swap');
+header {
+    ul {
+        li {
+            a {
+                font-family: 'Satisfy', cursive;
+            }
+        }
+    }
+}
+
+body {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Satisfy', cursive;
+        color: $color4;
+        text-align: center;
+        padding: 10px 0px;
+    }
+}
+

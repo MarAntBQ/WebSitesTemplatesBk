@@ -1,0 +1,140 @@
+.banner {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/banner/banner.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    color: white;
+    padding: 20px 10%;
+    p, h1, h2, div {
+        width: 100%;
+        text-align: center;
+        strong {
+            color: $color1;
+        }
+    }
+    .social-media-banner-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            border: 1px solid $color5;
+            transition: 1s all;
+            border-radius: 5px;
+            &:hover {
+                background: $color5;
+                border: 1px solid $color5;
+                color: $color2;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.scroll-down {
+    //background: green;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid white;
+    margin: 5px auto;
+    margin-top: 50px;
+    transition: 0.5s all;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.5);
+        transform: scale(1.1);
+    }
+
+    //box-sizing: border-box;
+    span {
+        width: 4px;
+        height: 15px;
+        background: white;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 8px;
+        transition: 2s all;
+        animation: 2s ease infinite scrolldownanimation;
+
+        @keyframes scrolldownanimation {
+            0% {
+                top: 8px;
+            }
+
+            50% {
+                top: 30px;
+                opacity: 0.5;
+            }
+
+            100% {
+                top: 8px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.scroll-down-black {
+    //background: green;
+    display: block;
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid $color3;
+    margin: 5px auto;
+    margin-top: 50px;
+    transition: 0.5s all;
+
+    &:hover {
+        background: rgba(132, 130, 130, 0.5);
+        transform: scale(1.1);
+    }
+
+    //box-sizing: border-box;
+    span {
+        width: 4px;
+        height: 15px;
+        background: $color3;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 8px;
+        transition: 2s all;
+        animation: 2s ease infinite scrolldownanimation;
+
+        @keyframes scrolldownanimation {
+            0% {
+                top: 8px;
+            }
+
+            50% {
+                top: 30px;
+                opacity: 0.5;
+            }
+
+            100% {
+                top: 8px;
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,54 @@
+html {
+
+    &,
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-image: url(../img/pages/home/banner.jpg);
+
+        main {
+            margin-top: 70px;
+            background: white;
+
+            .page-section {
+                padding: 70px 10% 30px 10%;
+
+                @media (max-width: $break-medium) {
+                    padding-left: 5%;
+                    padding-right: 5%;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: $color1;
+                }
+
+                h2 {
+                    color: $color2;
+                }
+
+                .subtittle {
+                    color: $color3;
+                }
+
+                p {
+                    color: #4A4A50;
+                }
+
+                .gray {
+                    color: #4A4A50;
+                }
+
+                &:nth-of-type(even) {
+                    background: #f8f8f8;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+html {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/banner/banner.jpg);
+    body {
+        min-width: 300px;
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        &, * {
+            box-sizing: border-box;
+        }
+        main {
+            background: white;
+            .page-section {
+                padding: 70px 10%;
+                /*min-height: 100vh;*/
+                .gray {
+                    color: #4d4d4d;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* Marbust Technology Company Template 7*/
+@import url("marbust-framework.css");
+@media (min-width: 1000px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 300px;
+    max-width: 2400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body header {
+    width: 30%;
+    height: 100%;
+    min-height: 100vh;
+    background: green;
+    position: fixed;
+    left: 0;
+  }
+  body .main-content {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 70%;
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

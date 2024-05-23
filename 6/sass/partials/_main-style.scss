@@ -1,0 +1,40 @@
+html {
+    background: rgba(217, 217, 217, 0.49);
+}
+body {
+    background: white;
+}
+
+a {
+    text-decoration: none;
+    //font-weight: bold;
+    color: $color4;
+    transition: 0.1s;
+    &:hover {
+        color: $color3;
+    }
+}
+
+.site-container {
+    padding: 25px 50px;
+    @media (max-width: $break-medium) {
+        padding: 25px 40px;
+    }
+    @media (max-width: $break-small) {
+        padding: 25px 30px;
+    }
+    h2, h3 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+    h3 {
+        margin-top: 7px;
+    }
+    .botton-line {
+        height: 3px;
+        background: $color1;
+        display: block;
+        border-radius: 2px;
+    }
+}

@@ -1,0 +1,23 @@
+@import url("marbust-framework.css");
+//Colors  https://coolors.co/0c1b31-ca8702-e0e0e0-781718
+$color1: #0c1b31;
+$color2: #ca8702;
+$color3: #e0e0e0;
+$color4: #781718;
+@import 'partials/mediaqueries';
+@import 'partials/fonts';
+@import 'partials/html';
+//Header
+@import 'partials/header';
+//Body Elements
+@import 'partials/main';
+@import 'partials/pages';
+//Complements
+@import 'partials/scroll';
+@import 'partials/buttons';
+@import 'partials/form';
+@import 'partials/pop-out';
+//Footer
+@import 'partials/footer';
+
+

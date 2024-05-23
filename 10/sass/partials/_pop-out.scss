@@ -1,0 +1,165 @@
+#pop-up {
+
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	width: 50px;
+	z-index: 3;
+
+	a {
+		&:nth-child(1) {
+			position: fixed;
+			width: 50px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 3;
+			background-image: linear-gradient(to right, #0C1B31 0%, #506e9b 51%, #0C1B31 100%);
+			background-size: 200% auto;
+			right: 15px;
+			bottom: 15px;
+			font-size: 22px;
+			border-radius: 50%;
+			color: white;
+			transition: 0.5s;
+
+			&:hover {
+				cursor: pointer;
+				background-position: right center;
+			}
+		}
+
+		&:nth-child(2),
+		&:nth-child(3),
+		&:nth-child(4) {
+			display: none;
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		&:nth-child(2) {
+			background: #4267B2;
+			&:hover {
+				background: #314c84;
+			}
+		}
+
+		&:nth-child(3) {
+			background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+			background-size: 200% auto;
+			&:hover {
+				background-position: right center;
+			}
+		}
+
+		&:nth-child(4) {
+			background: #25D366;
+			&:hover {
+				background: #1ca14e;
+			}
+		}
+	}
+}
+
+.pop-out-active {
+	a {
+		@mixin socialMediaContactBtns {
+			position: fixed;
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			font-size: 22px;
+			z-index: 2;
+			color: white;
+			border-radius: 50%;
+			transition: 0.5s;
+			text-decoration: none;
+			animation: 0.5s upsocialmedia ease;
+			transform: translateY(0px);
+			right: 15px;
+			@keyframes upsocialmedia {
+				from {
+					transform: translateY(300px);
+				}
+
+				to {
+					transform: translateY(0px);
+				}
+			}
+		}
+
+
+		&:nth-child(2) {
+			@include socialMediaContactBtns;
+			bottom: 70px;
+		}
+
+		&:nth-child(3) {
+			@include socialMediaContactBtns;
+			bottom: 125px;
+			background: $color4;
+		}
+
+		&:nth-child(4) {
+			@include socialMediaContactBtns;
+			bottom: 180px;
+		}
+	}
+}
+
+.pop-out-desactive {
+	a {
+		@mixin socialMediaContactBtns {
+			position: fixed;
+			display: flex !important;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			font-size: 22px;
+			z-index: 2;
+			color: white;
+			border-radius: 50%;
+			transition: 0.5s;
+			text-decoration: none;
+			transform: translateY(300px);
+			animation: 0.5s downsocialmedia ease;
+			right: 15px;
+			@keyframes downsocialmedia {
+				from {
+					transform: translateY(0px);
+				}
+
+				to {
+					transform: translateY(300px);
+					
+				}
+			}
+		}
+
+
+		&:nth-child(2) {
+			//right: 15px;
+			@include socialMediaContactBtns;
+			background: $color4;
+			bottom: 70px;
+		}
+
+		&:nth-child(3) {
+			//right: 15px;
+			@include socialMediaContactBtns;
+			bottom: 125px;
+			background: $color4;
+		}
+
+		&:nth-child(4) {
+			//right: 15px;
+			@include socialMediaContactBtns;
+			bottom: 180px;
+			background: $color4;
+		}
+	}
+}

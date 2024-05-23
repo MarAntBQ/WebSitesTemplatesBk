@@ -1,0 +1,53 @@
+@mixin scroll-setup {
+	display: block;
+    width: 30px;
+    height: 50px;
+    border-radius: 30px;
+    border: 2px solid $color3;
+    margin: 5px auto;
+	transition: 1s;
+    //box-sizing: border-box;
+    span {
+        width: 4px;
+        height: 15px;
+        background: $color3;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        top: 8px;
+        transition: 2s all;
+        animation: 2s ease infinite scrolldownanimation;
+        @keyframes scrolldownanimation {
+            0% {
+                top: 8px;
+            }
+            50% {
+                top: 30px;
+                opacity: 0.5;
+            }
+            
+            100% {
+                top: 8px;
+                opacity: 1;
+            }
+        }
+    }
+}
+.scroll-down {
+    @include scroll-setup;
+	&:hover {
+		background: rgba(0, 0, 0, 0.4);
+	}
+}
+
+.scroll-down-blue {
+    @include scroll-setup;
+	border: 2px solid $color1;
+	span {
+		background: $color1;
+	}
+	&:hover {
+		background: rgba(0, 0, 0, 0.09);
+	}
+}

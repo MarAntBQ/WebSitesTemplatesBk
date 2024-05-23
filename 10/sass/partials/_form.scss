@@ -1,0 +1,74 @@
+.form-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	form {
+		width: 100%;
+
+		p {
+			display: none;
+		}
+
+		input {
+			width: 100%;
+			padding: 10px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			border: 1px solid $color3;
+			border-radius: 10px;
+			margin: 10px 0px;
+		}
+
+		textarea {
+			width: 100%;
+			min-width: 100%;
+			max-width: 100%;
+			height: 25vh;
+			min-height: 25vh;
+			max-height: 25vh;
+			padding: 10px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 18px;
+			border: 1px solid $color3;
+			border-radius: 10px;
+			margin: 10px 0px;
+		}
+
+		button {
+			margin: 15px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			//border: 1px solid white;
+			width: 100%;
+			max-width: 200px;
+			padding: 15px;
+			background-size: 200% auto;
+			font-family: 'Roboto', sans-serif;
+			//background: rgb(3, 4, 94);
+			background-image: linear-gradient(to right, #0C1B31 0%, #506e9b 51%, #0C1B31 100%);
+			//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+			//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			transition: 0.5s;
+			border: 0px;
+			//box-shadow: 0 0 20px #eee;
+
+			&:hover {
+				background-position: right center;
+				transform: scale(1.05);
+				border-radius: 10px;
+				filter: drop-shadow(8px 8px 10px rgba(120, 23, 24, 0.29));
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.fm-msg {
+	line-height: 2em;
+	font-weight: bold;
+}

@@ -1,0 +1,88 @@
+#menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    //background: green;
+    color: $color2;
+    padding: 7px;
+    font-size: 33px;
+    transition: 0.5s;
+
+    &:hover {
+        color: $color3;
+        cursor: pointer;
+    }
+}
+
+header {
+    z-index: 4;
+    display: none;
+    background: $color1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      background:transparent; // manage scrollbar background color here
+    width: 1px;
+    }
+    * {
+        box-sizing: border-box;
+    }
+
+    i {
+        //background: green;
+        color: $color3;
+        padding: 7px;
+        font-size: 30px;
+        transition: 0.5s;
+
+        &:hover {
+            color: $color5;
+            cursor: pointer;
+        }
+    }
+
+    nav {
+
+        ul {
+            height: calc(100vh - 44px);
+            //min-height: 75px;
+            //width: 100%;
+            min-height: 200px;
+            list-style: none;
+            display: flex;
+            //align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    display: block;
+                    font-size: 20px;
+                    min-width: 100%;
+                    text-align: center;
+                    padding: 15px 7.5px;
+                    color: $color4;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: white;
+                        background: $color5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-active {
+    display: block;
+}

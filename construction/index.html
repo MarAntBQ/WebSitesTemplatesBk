@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Marbust Sites MBTC&reg; | La Libélula Púrpura | Estamos Construcción</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<header class="contenido-encabezado" id="contenido-encabezado">
+		<div class="texto-encabezado">
+			<p class="icono">
+				<i class="fas fa-book-open"></i>
+			</p>
+			<h1 class="titulo">
+				La Libélula Púrpura<br>
+				<span class="titulo-naranja-neon texto-regular">Estamos en Construcción</span>
+			</h1>
+
+			<a href="https://sites.marbust.com" class="btn-link texto-regular">Más Información</a>
+		</div>
+	</header>
+
+	<main>
+		<section class="contenedor">
+			<h2 class="subtitulo-h2">¿Que es la Libélula Púrpura&reg;?</h2>
+			<p><span class="letra-capital">¡Hola!</span> mi nombre es Púrpura y soy una libélula, nací en Roseland un lugar fantástico y cuando leas mi historia sabrás lo que estoy diciendo. :D Mi creadora es Ana Verónica Parra una joven periodista y escritora, ella me dijo que quiere pintar mundos de colores, la verdad no sé a lo que se refiere, a veces he imaginado que vive en la Nube 7; el lugar donde nace toda imaginación.</p>
+			<p>¡Muy pronto me conocerás! ¡Espera por mi, querido/a lector/a! </p>
+			<p>La Libélula Púrpura&reg; es una Marca Registrada a nombre de:</p>
+			<p>&copy; 2020 Ana Verónica Parra Dávila - All Rights Reserved</p>
+		</section>
+	</main>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script>
+		window.addEventListener('scroll', () => {
+			const header = document.getElementById('contenido-encabezado');
+			header.style.opacity = '1' - window.pageYOffset / 650;
+		});
+	</script>
+</body>
+</html>

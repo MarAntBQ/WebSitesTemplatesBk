@@ -1,0 +1,15 @@
+.btn-center {
+	display: block;
+	margin: 10px auto;
+	padding: 15px 10px;
+	background: $color2;
+	color: white;
+	text-align: center;
+	width: 200px;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: 1s;
+	&:hover {
+		background: $color3;
+	}
+}

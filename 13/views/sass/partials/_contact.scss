@@ -1,0 +1,111 @@
+.contact-page {
+    .contact-box {
+        background: white;
+        filter: drop-shadow(2px 2px 4px rgba(128, 128, 128, 0.32));
+        padding: 30px 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+
+        .icon-ctnr {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f8f8f8;
+            color: $color4;
+            font-size: 60px;
+            border-radius: 50%;
+            margin: 5px auto;
+            transition: 0.3s;
+            padding: 15px;
+        }
+
+        h2 {
+            color: $color4;
+            margin: 10px 0px;
+            width: 100%;
+        }
+
+        .service-about {
+            padding: 0px 10%;
+            margin-bottom: 15px;
+            //font-weight: bold;
+            width: 100%;
+        }
+
+        a {
+            width: 100%;
+            text-decoration: none;
+            color: $color2;
+            transition: 0.3s;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+.contact-form {
+    .fm-msg {
+        line-height: 2em;
+        font-weight: bold;
+    }
+
+    form {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+
+        @mixin inputssettings {
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            font-family: 'Noto Sans KR', sans-serif;
+            margin: 10px 0px;
+            border: 1px solid rgba(5, 105, 57, 0.42);
+            border-radius: 10px;
+        }
+
+        input {
+            @include inputssettings;
+        }
+
+        textarea {
+            @include inputssettings;
+            height: 25vh;
+            max-height: 25vh;
+            min-height: 25vh;
+        }
+
+        button {
+            margin: 10px auto;
+            display: block;
+            width: 180px;
+            padding: 20px 20px;
+            background: $color1;
+            transition: 0.3s all;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            border: 0px;
+            cursor: pointer;
+            font-family: 'Noto Sans KR', sans-serif;
+            &:hover {
+                background: $color2;
+            }
+        }
+    }
+}

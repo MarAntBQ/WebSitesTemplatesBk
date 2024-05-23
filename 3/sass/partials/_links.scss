@@ -1,0 +1,21 @@
+body {
+    @mixin linksetup {
+        text-decoration: none;
+        color: $color4;
+        transition: 1s;
+        &:hover {
+            color: $color5;
+        }
+    }
+    main {
+        a {
+           @include linksetup; 
+        }
+    }
+    
+    footer {
+        a {
+            @include linksetup;
+        }
+    }
+}

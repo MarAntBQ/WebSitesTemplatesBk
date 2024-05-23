@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+// Media Queries
+$break-intermedium: 1280px;
+$break-medium: 1000px;
+$break-small: 550px;

@@ -1,0 +1,24 @@
+/* Marbust Sites MBTC® Template 4 */
+/*Powerby Marbust Framework CSS 4.0*/
+@import url("https://framework.marbust.com/marbust-framework.css");
+//@import url('marbust-framework.css');
+
+//Variables
+//Colors https://coolors.co/app/1e1e24-0496ff-ffd23f-018e42-02182b
+$color1: #1E1E24;
+$color2: #0496FF;
+$color3: #FFD23F;
+$color4: #018E42;
+$color5: #02182B;
+
+//-- Media Queries
+$break-intermedium: 1280px;
+$break-medium: 1000px;
+$break-small: 550px;
+
+//Partials
+@import 'partials/main-style';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+

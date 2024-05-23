@@ -1,0 +1,15 @@
+main {
+	background: white;
+	&, * {
+		box-sizing: border-box;
+	}
+	.page-section {
+		padding: 70px 10% 30px 10%;
+		.gray {
+			color: gray;
+		}
+		.gray-bright {
+			color: #c6c6c6;
+		}
+	}
+}

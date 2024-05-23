@@ -1,0 +1,199 @@
+header {
+    background: $color1;
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    max-height: 70px;
+    min-height: 70px;
+    display: flex;
+    align-content: center;
+    z-index: 10;
+    //box-shadow: 0 3px 7px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10%;
+
+        @media (max-width: $break-medium) {
+            padding: 10px 10px;
+        }
+
+        transition: 0.3s;
+        width: 100%;
+        height: 70px;
+        max-height: 70px;
+        min-height: 70px;
+        //height: 150px;
+
+
+        .logo {
+            width: 200px;
+
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        ul {
+            @media (min-width: $break-medium) {
+                display: flex;
+                list-style: none;
+                align-items: center;
+
+                #close-btn {
+                    display: none;
+                }
+
+                li {
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        color: white;
+                        transition: 0.3s;
+                        text-align: center;
+
+                        &:hover {
+                            background: $color2;
+                            //color: white;
+                        }
+                    }
+
+                    .link-active {
+                        background: $color2;
+                    }
+                }
+            }
+
+            @media (max-width: $break-medium) {
+                display: none;
+
+            }
+
+        }
+
+        #menu-btn {
+            @media (min-width: $break-medium) {
+                display: none;
+            }
+
+            color: white;
+            padding: 5px;
+            font-size: 25px;
+            transition: 0.3s;
+
+            &:hover {
+                cursor: pointer;
+                color: $color2;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.menu-down {
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@mixin PhoneMenu {
+    display: block;
+    position: fixed;
+    width: 100%;
+    max-width: 300px;
+    list-style: none;
+    top: 0;
+    right: 0;
+    z-index: 12;
+    background: $color1;
+    min-height: 100vh;
+    overflow-y: auto;
+    border-left: 5px solid $color4;
+
+    #close-btn {
+        //display: block;
+        padding: 10px;
+        font-size: 30px;
+        //background: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        margin-right: auto;
+        color: white;
+        cursor: pointer;
+        transition: 0.8s;
+
+        &:hover {
+            transform: rotate(360deg);
+            color: $color2;
+        }
+    }
+
+
+
+    li {
+        width: 100%;
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            text-align: center;
+
+            &:hover {
+                background: $color2;
+                //color: white;
+            }
+        }
+
+        .link-active {
+            background: $color2;
+        }
+    }
+}
+
+@media (max-width: $break-medium) {
+    .active-menu {
+        @include PhoneMenu;
+        animation: 0.5s appearmenu ease;
+
+        @keyframes appearmenu {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0px);
+            }
+        }
+    }
+
+    .desactivate-menu {
+        @include PhoneMenu;
+        animation: 0.5s dappearmenu ease;
+        transform: translateX(-100%);
+
+        @keyframes dappearmenu {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+    }
+}

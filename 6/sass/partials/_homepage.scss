@@ -1,0 +1,172 @@
+.home-presentation {
+    height: 500px;
+    min-height: 100vh;
+
+    &,
+    * {
+        box-sizing: border-box;
+
+        transition: 0.2s;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .left,
+    .right {
+        max-width: 700px;
+        min-height: 100vh;
+        width: 50%;
+
+        @media (max-width: 750px) {
+            height: 50vh;
+            max-width: 750px;
+            min-height: 250px;
+            width: 100%;
+        }
+    }
+
+    .left {
+        //background: green;
+
+        background-image: url("../img/home-presentation.jpg");
+
+        @media (max-width: 750px) {
+            background-image: url("../img/home-presentation2.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 60%;
+            //background-position: top center;
+            //max-height: 200px;
+
+        }
+
+        @media (max-height: 415px) {
+            background-size: 100% 100%;
+        }
+
+        @media (min-width: 750px) {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+
+    }
+
+    .right {
+        align-content: center;
+        //background: black;
+        background: rgb(55, 173, 54);
+        background: linear-gradient(90deg, rgba(55, 173, 54, 1) 0%, rgba(7, 81, 44, 1) 100%);
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+            width: 100%;
+        }
+
+        a {
+
+
+            i {
+                color: white;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #f7e512;
+                }
+            }
+
+            //display: block;
+
+            //font-size: 70px;
+            //max-height: 40px;
+            //padding: 15px;
+            //border: 1px solid #4E8E3A;
+        }
+
+
+    }
+}
+
+.laboratorio-home {
+    h2 {
+        margin-bottom: 7px;
+        margin-top: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .botton-line {
+        background: $color1;
+        border-radius: 2px;
+        display: block;
+        height: 3px;
+    }
+
+    .left,
+    .right {
+        max-width: 700px;
+        width: 50%;
+
+        @media (max-width: $break-medium) {
+            max-width: $break-medium;
+            width: 100%;
+        }
+    }
+}
+
+.distribuidores-flex {
+    img {
+        border: 1px solid $color5;
+    }
+}
+
+.contactform {
+    input {
+        border: 1px solid $color4;
+        padding: 5px;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    textarea {
+        border: 1px solid $color4;
+        max-height: 200px;
+        min-height: 200px;
+        font-family: 'Montserrat', sans-serif;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .btn {
+        display: block;
+        width: 200px;
+        padding: 15px 10px;
+        background: $color2;
+        text-align: center;
+        margin: 15px auto;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 0px;
+
+        @media (max-width: $break-small) {
+            width: 80%;
+        }
+
+        transition: 0.3s;
+
+        &:hover {
+            background: $color3;
+            cursor: pointer;
+        }
+    }
+}

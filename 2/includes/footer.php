@@ -1,0 +1,4 @@
+<p>Follow us: <a href="http://facebook.com/"><i class="fab fa-facebook-f"></i></a> | <a href="http://twitter.com"><i class="fab fa-twitter"></i></a> | <a href="http://instagram.com"><i class="fab fa-instagram"></i></a> | <a href="http://youtube.com"><i class="fab fa-youtube"></i></a></p>
+    <p class="fs10px powerby">Powerby: <a href="http://framework.marbust.com">Marbust Framework CSS 4.0</a> with <i class="fas fa-heart"></i></p>
+        <p>&copy; <span id="year">2019</span> <a href="http://marbust.com">Marbust Technology Company</a> - All Rights Reserved</p>
+        <a class="return-top" href="#"><i class="fas fa-arrow-up"></i></a>

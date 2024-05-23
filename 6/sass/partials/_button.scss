@@ -1,0 +1,19 @@
+.btn {
+    display: block;
+    width: 200px;
+    padding: 15px 10px;
+    background: $color2;
+    text-align: center;
+    margin: 15px auto;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    @media (max-width: $break-small) {
+        width: 80%;
+    }
+    transition: 0.3s;
+    &:hover {
+        background: $color3;
+        color: white;
+    }
+}

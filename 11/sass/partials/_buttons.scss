@@ -1,0 +1,15 @@
+.btn-center {
+    background: $color3;
+    color: white;
+    display: block;
+    margin: 15px auto;
+    max-width: 250px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s;
+    width: 80%;
+    &:hover {
+        background: $color2;
+    }
+}

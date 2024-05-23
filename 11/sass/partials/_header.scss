@@ -1,0 +1,214 @@
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    transition: 0.3s;
+    z-index: 100;
+    min-height: 70px;
+    max-height: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: $color3;
+
+    @media (min-width: $break-medium) {
+        //background: $color1;
+        justify-content: center;
+
+        .menu-btn,
+        .logo-container,
+        .social-media-header-links {
+            display: none;
+        }
+
+        nav {
+            .close-btn {
+                display: none;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                list-style: none;
+
+                li {
+                    @mixin link-active {
+                        border: 1.5px solid $color1;
+                        color: $color1;
+                    }
+
+                    a {
+                        display: block;
+                        padding: 10px 20px;
+                        margin: 0px 10px;
+                        text-decoration: none;
+                        border: 1.5px solid $color3;
+                        color: $color5;
+                        transition: 1s;
+                        text-align: center;
+
+                        &:hover {
+                            @include link-active;
+                        }
+                    }
+
+                    .link-active {
+                        @include link-active;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: $break-medium) {
+        nav {
+            display: none;
+        }
+
+        .menu-btn {
+            font-size: 30px;
+            cursor: pointer;
+            padding: 5px;
+            transition: 0.8s;
+            color: $color5;
+
+            &:hover {
+                transform: scale(1.1);
+                color: $color1;
+            }
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: $color5;
+            transition: 1s;
+            font-weight: bolder;
+            font-family: 'RocknRoll One', sans-serif;
+
+            &:hover {
+                color: $color1;
+            }
+        }
+
+        .social-media-header-links {
+            display: flex;
+
+            a {
+                display: block;
+                font-size: 19px;
+                color: $color5;
+                padding: 4px;
+                text-decoration: none;
+                transition: 1s;
+
+                &:hover {
+                    color: $color1;
+                }
+            }
+        }
+
+        //When the user activate the menu 
+        @mixin Mobile-Menu-Setup {
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+            //z-index: 101;
+            width: 100%;
+            height: 100vh;
+            background: $color3;
+            padding: 10px;
+            overflow-y: auto;
+
+            .close-btn-ctnr {
+                display: flex;
+                justify-content: flex-end;
+
+                .close-btn {
+                    font-size: 25px;
+                    padding: 5px;
+                    color: $color5;
+                    transition: 1s;
+
+                    &:hover {
+                        color: $color1;
+                        cursor: pointer;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
+
+                li {
+                    width: 100%;
+
+                    a {
+                        display: block;
+                        padding: 15px 20px;
+                        margin: 0px 10px;
+                        text-decoration: none;
+                        border: 1.5px solid $color3;
+                        color: $color5;
+                        transition: 1s;
+                        margin: 5px 0px;
+                        text-align: center;
+
+                        &:hover {
+                            border: 1.5px solid $color1;
+                            color: $color1;
+                        }
+                    }
+
+                    .link-active {
+                        border: 1.5px solid $color1;
+                        color: $color1;
+                    }
+                }
+            }
+        }
+
+        .active-menu {
+            @include Mobile-Menu-Setup;
+            animation: 0.5s appearmenu ease;
+
+            @keyframes appearmenu {
+                from {
+                    transform: translateX(-100%);
+                }
+
+                to {
+                    transform: translateX(0px);
+                }
+            }
+        }
+
+        .desactivate-menu {
+            @include Mobile-Menu-Setup;
+            animation: 0.5s dappearmenu ease;
+            transform: translateX(-100%);
+
+            @keyframes dappearmenu {
+                from {
+                    transform: translateX(0px);
+                }
+
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+    }
+}

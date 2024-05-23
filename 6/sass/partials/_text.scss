@@ -1,0 +1,34 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+h1, h2, h3, h4, h5, h6 {
+    //font-family: 'Roboto Slab', serif;
+    font-family: 'Oswald', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+.home-presentation .right h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+//@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Basic&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marmelad&display=swap');
+header {
+    nav {
+        ul {
+            li {
+                a {
+                    //font-family: 'Kanit', sans-serif;
+                    //font-family: 'Basic', sans-serif;
+                    //font-family: 'Lilita One', cursive;
+                    font-family: 'Marmelad', sans-serif;
+                }
+            }
+        }
+    }
+}

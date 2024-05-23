@@ -1,0 +1,116 @@
+.wsp-msg {
+    position: fixed;
+    bottom: 22px;
+    right: 60px;
+    padding: 5px 10px;
+    background: #ECE5DD;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    transform: scale(0);
+    transform: translateX(200px);
+    animation: 3s ease wspdsp;
+
+    @keyframes wspdsp {
+        0% {
+            transform: translateY(100px) translateX(0px);
+        }
+
+        50% {
+            transform: translateY(0px)
+        }
+
+        100% {
+            transform: translateX(200px);
+        }
+    }
+}
+
+.wsp-btn {
+
+    &,
+    * {
+        transition: 0.5s all;
+    }
+
+    display: flex;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: #25D366;
+    color: white;
+    //padding: 5px;
+    font-size: 30px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+
+    &:hover {
+        background: #075E54;
+
+        i {
+            transform: rotate(15deg);
+        }
+    }
+
+    transform: translateX(0px);
+    animation: 1s ease wspdsp2;
+
+    @keyframes wspdsp2 {
+        from {
+            transform: translateX(50px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+}
+
+footer {
+    //background: $color2;
+	color: white;
+	padding: 30px 10px;
+	text-align: center;
+	&, * {
+		box-sizing: border-box;
+	}
+	a {
+		color: #b3d9ed;
+		font-weight: bold;
+		transition: 1s;
+		text-decoration: none;
+		&:hover {
+			color: white;
+		}
+	}
+	.slider-btn {
+		margin: 15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		//border: 1px solid white;
+		max-width: 150px;
+		width: 150px;
+		padding: 15px;
+		background-size: 300% 100%;
+		//background: rgb(3, 4, 94);
+		background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+		//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+		//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 18px;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			color: white;
+			background-position: 100% 0;
+		}
+	}
+}

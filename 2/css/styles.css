@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/* Marbust Sites MBTC® - Template 2*/
+/* 2019 - Let's Do it Different with MARBUST.COM */
+/* Import the Framework */
+@import url("marbust-framework.css");
+/* Impot Font-Awesome */
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* Main Style Decitions */
+body {
+  background: #3A3939;
+}
+
+main {
+  background: white;
+}
+
+/* Document Fonts */
+body {
+  font-family: "trebuchet ms", geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header */
+header {
+  background: #BB4699;
+}
+header nav .header-title {
+  background: #3A3939;
+  color: #FCFCFC;
+  border-bottom: 1px solid #EFCBAC;
+  padding: 25px 5px;
+}
+header nav .header-title .social-networks {
+  margin-top: 15px;
+  text-align: center;
+}
+header nav .header-title .social-networks a {
+  font-weight: bold;
+  color: #EADDD3;
+  text-decoration: none;
+  transition: 1s;
+}
+header nav .header-title .social-networks a i {
+  transition: 1s;
+}
+header nav .header-title .social-networks a:hover {
+  filter: drop-shadow(8px 8px 10px grey);
+}
+header nav .header-title .social-networks a:hover i {
+  transform: rotate(360deg);
+}
+header nav .header-title .social-networks a:nth-child(1):hover i {
+  color: #3b5998;
+}
+header nav .header-title .social-networks a:nth-child(2):hover i {
+  color: #00acee;
+}
+header nav .header-title .social-networks a:nth-child(3):hover i {
+  color: #f09433;
+}
+header nav .header-title .social-networks a:nth-child(4):hover i {
+  color: #c4302b;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #EFCBAC;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+header nav ul .menu-toggle {
+  display: none;
+}
+header nav ul li a {
+  font-size: 20px;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #EFCBAC;
+  transition: 0.5s;
+}
+header nav ul li a i {
+  color: #FCFCFC;
+  transition: 1s;
+}
+header nav ul li a:hover {
+  background: #3A3939;
+  color: #EADDD3;
+}
+header nav ul li:nth-of-type(odd):hover a i {
+  transform: rotate(360deg);
+}
+header nav ul li:nth-of-type(even):hover a i {
+  transform: rotate(-360deg);
+}
+
+@media (max-width: 1000px) {
+  header nav ul {
+    flex-wrap: wrap;
+  }
+  header nav ul .menu-toggle {
+    width: 100%;
+    font-size: 20px;
+    display: block;
+    padding: 15px 20px;
+    color: #EFCBAC;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  header nav ul .menu-toggle:hover {
+    background: #3A3939;
+    color: #EADDD3;
+  }
+  header nav ul li {
+    display: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #FCFCFC;
+  }
+  header nav ul li:nth-of-type(1) {
+    border-top: 1px solid #FCFCFC;
+  }
+  header nav ul li:last-child {
+    border-bottom: 0px solid #FCFCFC;
+  }
+}
+.menuactivo .menu-toggle {
+  background: #3A3939;
+  color: #EADDD3;
+}
+.menuactivo li {
+  display: block;
+}
+
+.pagina-actual {
+  background: #3A3939;
+  color: #EADDD3;
+}
+
+/* Footer */
+footer {
+  background: #3A3939;
+  color: #FCFCFC;
+  padding: 25px 10px;
+  text-align: center;
+  line-height: 2em;
+}
+footer .powerby i {
+  animation: 2s heart infinite;
+}
+footer a {
+  font-weight: bold;
+  color: #EADDD3;
+  text-decoration: none;
+  transition: 1s;
+}
+footer a i {
+  transition: 1s;
+}
+footer a:hover {
+  color: #EFCBAC;
+  filter: drop-shadow(8px 8px 10px grey);
+}
+footer a:hover i {
+  transform: rotate(360deg);
+  color: #EFCBAC;
+}
+
+.return-top {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #BB4699;
+  color: #EADDD3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  opacity: 0.2;
+}
+.return-top:hover {
+  opacity: 1;
+  background: #3A3939;
+  color: #EFCBAC;
+  border: 1px solid #EFCBAC;
+}
+.return-top i {
+  font-size: 25px;
+}
+
+@keyframes heart {
+  0% {
+    color: rgba(255, 0, 0, 0.1);
+  }
+  10% {
+    color: rgba(255, 0, 0, 0.2);
+  }
+  20% {
+    color: rgba(255, 0, 0, 0.4);
+  }
+  30% {
+    color: rgba(255, 0, 0, 0.6);
+  }
+  40% {
+    color: rgba(255, 0, 0, 0.8);
+  }
+  50% {
+    color: red;
+    filter: drop-shadow(8px 8px 10px grey);
+  }
+  60% {
+    color: rgba(255, 0, 0, 0.8);
+  }
+  70% {
+    color: rgba(255, 0, 0, 0.6);
+  }
+  80% {
+    color: rgba(255, 0, 0, 0.4);
+  }
+  90% {
+    color: rgba(255, 0, 0, 0.2);
+  }
+  100% {
+    color: rgba(255, 0, 0, 0.1);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,56 @@
+footer {
+    .top {
+        padding: 20px 10px;
+        background: $color2;
+        ul {
+            //padding-left: 25px;
+            list-style: none;
+            text-align: center;
+        }
+        .social-networks {
+            a {
+                display: block;
+                //padding: 5px;
+                background: $color4;
+                color: white;
+                margin: 0px 5px;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-size: 18px;
+                box-sizing: border-box;
+                animation: downsocialnetwork 1s ease;
+                transition: 1s;
+                @keyframes downsocialnetwork {
+                    0% {
+                        transform: translateY(-25px);
+                    }
+                    100% {
+                        transform: translateY(0px);
+                    }
+                }
+                i {
+                    transition: 1.5s;
+                }
+                &:hover {
+                    filter: drop-shadow(8px 8px 10px #808080);
+                    background: $color1;
+                    transform: scale(1.1);
+                    i {
+                        //transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    .copyright {
+        padding: 20px 10px;
+        background: $color1;
+        color: white;
+        text-align: center;
+        line-height: 2em;
+    }
+}

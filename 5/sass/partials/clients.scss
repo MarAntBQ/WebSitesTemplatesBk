@@ -1,0 +1,29 @@
+#clients {
+    padding: 20px 30px;
+    h1 {
+        color: $color2;
+        margin-bottom: 15px;
+    }
+    
+    .clients-boxes {
+        div {
+            width: 25%;
+            box-sizing: border-box;
+            max-height: 450px;
+            img {
+                width: 100%;
+                max-width: 450px;
+                min-height: 100%;
+            }
+            @media (max-width: $break-intermedium) {
+                width: 33%;
+            }
+            @media (max-width: $break-medium) {
+                width: 50%;
+            }
+            @media (max-width: $break-small) {
+                width: 100%;
+            }
+        }
+    }
+}

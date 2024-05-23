@@ -1,0 +1,30 @@
+/*Marbust Sites MBTC - Template 3*/
+/*Powerby Marbust Framework CSS 4.0*/
+@import url("https://framework.marbust.com/marbust-framework.css");
+//Here you'll have the variables of your project
+//--Colors https://coolors.co/0a100d-b9baa3-d6d5c9-a22c29-902923
+$color1: #0A100D; //Copyright bg & header color
+$color2: #B9BAA3; //Footer top bg
+$color3: #D6D5C9; //Header bg
+$color4: #A22C29; //headings & link co
+$color5: #902923; //hover and menu subline co
+//-- Media Queries
+$break-intermedium: 1280px;
+$break-medium: 1000px;
+$break-small: 550px;
+// the main style decisions
+@import 'partials/main-style';
+// the header decisions
+@import 'partials/header';
+// the main decisions
+@import 'partials/main';
+// the links setup
+@import 'partials/links';
+// the footer setup
+@import 'partials/slider';
+// the footer setup
+@import 'partials/footer';
+// the button setup
+@import 'partials/buttons';
+// the contact setup
+@import 'partials/contact';

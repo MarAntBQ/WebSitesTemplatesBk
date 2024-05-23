@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Menu Bar Example | Full Stack Web Lab&reg;</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./" class="logo-img"><img src="img/header.png" alt="Logo"></a>
+            <ul>
+               <i class="far fa-times-circle" id="close-btn" onclick="destroymenu()"></i>
+                <li><a href="./">Home</a></li>
+                <li><a href="./">About</a></li>
+                <li><a href="./">Services</a></li>
+                <li><a href="./">Contact</a></li>
+            </ul>
+            <i class="fas fa-chevron-down" id="menu-btn" onclick="menudisplayer()"></i>
+        </nav>
+    </header>
+    <main>
+        <div data-aos="fade-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quo, optio rem beatae officiis. Quisquam ab, iste quia. Officia explicabo animi quae reprehenderit! Adipisci quibusdam non, error tenetur ipsa velit.</div>
+        <div data-aos="fade-down">Distinctio, quibusdam esse tempore, possimus ratione vero maxime dolore assumenda blanditiis a incidunt quod iste, voluptatem delectus temporibus reiciendis. Quis est, perferendis et eum tempora esse distinctio pariatur voluptatem necessitatibus.</div>
+        <div data-aos="fade-up">Excepturi nam obcaecati magnam consectetur iure soluta voluptates ea tenetur earum. Nisi dicta, ut nulla vero molestiae aliquid alias accusantium distinctio, quidem perferendis eius veniam nesciunt asperiores. Optio, voluptate, deleniti!</div>
+        <div data-aos="fade-up">Vitae veritatis possimus minima, maiores non natus, facere corporis provident, iure doloribus quaerat esse eum. Commodi similique libero itaque, dicta, pariatur atque, doloribus ducimus magnam enim sit dolore! Aut, inventore.</div>
+        <div data-aos="fade-up">Repellat voluptatem facilis ipsum temporibus aut natus, dolor minima. Eum laborum aspernatur minus ducimus cupiditate provident odit repellat neque aliquam, non unde, sequi nobis quod reiciendis, doloremque optio sed ut.</div>
+        <div data-aos="fade-up">Necessitatibus, doloremque, neque. Nobis suscipit nam et sapiente ducimus accusamus, ab fuga perferendis quae, aut voluptates accusantium, repellat expedita ad? Harum facilis ratione voluptatem quos voluptatum minus saepe temporibus mollitia.</div>
+        <div data-aos="fade-up">Unde maiores voluptates autem rem, a alias aut doloremque atque quidem quasi, animi. Soluta nostrum ratione nisi, tempore quis dolorum repellendus, autem dignissimos veniam ut rerum consectetur praesentium. Inventore, magni.</div>
+        <div data-aos="fade-up">Ipsum quod cumque, explicabo odio facilis ducimus sed animi dicta nobis voluptatem. Provident commodi voluptates velit neque omnis, molestias. Illo et necessitatibus vel quasi maxime voluptatem doloremque deleniti accusamus commodi.</div>
+        <div data-aos="fade-up">Minus quae repudiandae excepturi at ipsa, quasi vel necessitatibus quaerat voluptatem molestias quod minima maiores laudantium eaque. Eius assumenda cupiditate explicabo provident voluptatum, voluptatem id, officia, quam inventore atque modi!</div>
+        <div data-aos="fade-up">Molestias molestiae magni incidunt. Deleniti ipsam eaque blanditiis tempore placeat totam excepturi nesciunt ex, quae sed error hic, accusamus saepe. Saepe obcaecati, non ad at, porro eligendi facilis explicabo debitis.</div>
+        <div data-aos="fade-up">Consequatur, ipsam, doloribus. Accusamus, repellat! Ea quasi similique tenetur est. Deleniti, doloribus corrupti fugiat ea itaque voluptatem ipsa minima laboriosam deserunt officia debitis architecto incidunt vitae! Rerum dignissimos, sed odio.</div>
+        <div data-aos="fade-down">DOWN Natus sapiente enim repellendus expedita aperiam facilis quidem nulla est laboriosam, accusantium cupiditate nostrum commodi dolore ipsum aliquid soluta ab porro quod culpa quibusdam cumque facere eveniet laborum nihil. Esse.</div>
+        <div data-aos="fade-up">Reprehenderit quia quae, inventore nemo. Iste, atque, expedita. Dolore qui autem, quas alias, numquam necessitatibus sint nulla recusandae vitae repellat voluptatibus dicta placeat quaerat, hic, iusto nihil. Consequatur, magnam, libero.</div>
+        <div data-aos="fade-up">Illum dicta laboriosam distinctio, error doloremque nesciunt velit sequi itaque est, consequuntur voluptatem, vel tenetur! Est soluta, laudantium, numquam veniam ipsa ipsum aperiam laboriosam facilis pariatur quidem, ad eligendi odio!</div>
+        <div data-aos="fade-up">Necessitatibus eligendi recusandae sunt autem nihil odit non. Exercitationem ad, nisi ex officia voluptatibus recusandae velit praesentium nobis vitae molestiae, cum nam repellendus sequi deleniti natus vero eos, officiis vel!</div>
+        <div data-aos="fade-left">Eum voluptates aliquam corrupti, architecto quidem? Incidunt non id rerum numquam magnam eaque, laudantium beatae iusto laboriosam dolores alias tenetur veniam, dolor suscipit! Labore accusantium officia autem harum sed perferendis.</div>
+        <div data-aos="fade-up">Similique quod suscipit accusamus quis explicabo sunt, ipsa animi corporis illo quae iusto in eum quia laboriosam quibusdam aliquid placeat minus et sint voluptates nemo. Deleniti id soluta dolorem odit.</div>
+        <div data-aos="fade-up">Obcaecati qui rerum officia esse tenetur sequi quaerat, atque corporis quo voluptates molestias illo. Aut, qui. Neque, dicta facere, laboriosam fuga reiciendis maxime sequi asperiores minima, vel inventore quia quas!</div>
+        <div data-aos="fade-down">DOWN Natus sapiente enim repellendus expedita aperiam facilis quidem nulla est laboriosam, accusantium cupiditate nostrum commodi dolore ipsum aliquid soluta ab porro quod culpa quibusdam cumque facere eveniet laborum nihil. Esse.</div>
+        <div data-aos="fade-up">Dolores velit labore, corrupti repellendus quia recusandae architecto aliquid hic. Quisquam ipsam incidunt, at est, aut ad ratione dolor! Nemo, ad impedit officiis aliquam maiores. Sit doloribus vero optio culpa.</div>
+        <div data-aos="fade-up">Quibusdam consequatur nostrum doloremque blanditiis vitae magni, dicta perspiciatis quisquam maxime inventore reprehenderit odit autem corporis cum minima consectetur veritatis nesciunt? Optio ipsam quisquam, atque sequi omnis assumenda, repellat praesentium!</div>
+        <div data-aos="fade-down">DOWN Natus sapiente enim repellendus expedita aperiam facilis quidem nulla est laboriosam, accusantium cupiditate nostrum commodi dolore ipsum aliquid soluta ab porro quod culpa quibusdam cumque facere eveniet laborum nihil. Esse.</div>
+        <div data-aos="fade-up">In reiciendis, sapiente explicabo temporibus atque nobis itaque libero iure officia impedit est nulla totam officiis ullam accusamus similique asperiores eaque sed iusto consectetur voluptatem ratione. Voluptate minima laboriosam, modi!</div>
+        <div data-aos="fade-up">Impedit quos debitis unde totam odio sit sed rerum magnam inventore earum ipsa nam sint dolores veniam eos commodi eveniet vitae ad, tenetur tempora cum ut non! Voluptates, nobis ex.</div>
+        <div data-aos="fade-up">Nemo porro eos reprehenderit, aliquid ipsa, natus placeat sint. Natus suscipit mollitia beatae, culpa labore facilis libero, sit autem eos id! Modi, fuga, sint esse animi aut itaque ratione vero.</div>
+        <div data-aos="fade-left">Culpa eveniet accusantium earum fugiat reiciendis numquam quas molestias quam minus autem facere neque sit, obcaecati ratione saepe beatae omnis harum repudiandae ullam accusamus nisi. Praesentium molestiae odio cumque amet.</div>
+        <div data-aos="fade-up">Atque, aliquam quibusdam asperiores magni quis provident eligendi numquam. Illo nihil consectetur laborum laudantium vero, officia tempora libero possimus sed non? Excepturi distinctio voluptates architecto sequi, rem dolor, possimus! Dolores.</div>
+        <div data-aos="fade-up">Similique, repellendus. Fuga tempora atque, nisi non eligendi magnam. Minima inventore aliquid, eligendi? Quas sunt impedit perspiciatis, fugiat amet error delectus, maiores temporibus, eligendi in doloribus nemo optio? Perferendis, repudiandae?</div>
+        <div data-aos="fade-up">Quidem atque aperiam consequuntur vel nisi, sequi neque eligendi. Modi dicta, distinctio libero quisquam expedita quasi officiis autem. Omnis, voluptate, non! Accusantium incidunt voluptatibus veritatis inventore facilis consectetur recusandae sint.</div>
+        <div data-aos="fade-up">Accusantium veritatis numquam ipsa quisquam modi eius, ea corrupti. Odio laboriosam eos quibusdam ut in ea esse sed doloribus, iusto, fugit nostrum quae velit pariatur sequi aspernatur soluta temporibus, suscipit.</div>
+    </main>
+    <footer>
+        <script>
+            AOS.init();
+        </script>
+        <p>&copy; 2021 Full Stack Web Lab&reg; - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

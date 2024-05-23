@@ -1,0 +1,50 @@
+.slider {
+	min-height: 100vh;
+	color: white;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../img/slider/stats.jpg);
+	padding-bottom: 30px;
+
+	h1 {
+		text-transform: uppercase;
+	}
+	
+	h1, h2 {
+		transition: 1s;
+	}
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+	.slider-btn {
+		margin: 15px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		//border: 1px solid white;
+		max-width: 150px;
+		width: 150px;
+		padding: 15px;
+		background-size: 300% 100%;
+		//background: rgb(3, 4, 94);
+		background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+		//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+		//box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 18px;
+		transition: all 0.4s ease-in-out;
+
+		&:hover {
+			color: white;
+			background-position: 100% 0;
+		}
+	}
+}
